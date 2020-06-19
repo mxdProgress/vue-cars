@@ -1,1 +1,26 @@
 @import './normalize.scss';
+@import './sassConfig.scss';
+i[class^=icon] {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    background-color: $color-main;
+}
+
+.icon-help {
+    background-image: url(~@/assets/images/icon/icon-help.png);
+}
+
+.icon-user {
+    background-image: url(~@/assets/images/icon/icon-user.png);
+}
+
+.icon-search {
+    background-image: url(~@/assets/images/icon/icon-search.png);
+}
+
+.icon-location {
+    background-image: url(~@/assets/images/icon/icon-location.png);
+}
