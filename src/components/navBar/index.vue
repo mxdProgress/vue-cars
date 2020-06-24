@@ -6,7 +6,7 @@
                 <li><i class="icon icon-search"></i></li>
                 <li class="select-cars"><a href="javascript:void(0)">选择车辆</a></li>
                 <li><i class="icon icon-location"></i></li>
-                <li><i class="icon icon-user"></i></li>
+                <li><i class="icon icon-user" @click="user"></i></li>
             </ul>
         </div>
     </div>
@@ -19,8 +19,15 @@ export default {
 
         }
     },
+    mounted(){
+        
+    },
     methods:{
-      
+      user(){
+        this.$router.push({
+            name:"User"
+        })
+      }
     }
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
     <div class="boxContainer">
-        <Cars />
+        <!-- <Cars /> -->
         <Map />
         <NavBar />
-        <div  :class="['userContainer' , show ? 'active':'']">
+        <div id="userContainer" :class="['userContainer' , show ? 'active':'']">
             <router-view />
         </div>
       </el-amap>
@@ -26,7 +26,7 @@ export default {
             let route = this.$route;
             return route.name === 'Index' ? false : true
         }
-    }
+    },
     // watch:{
     //     $route:{
     //         handler:function(newVal, oldVal){
@@ -36,6 +36,17 @@ export default {
     //     },
     //     deep:true
     // }
+    mounted(){
+        document.addEventListener('mouseup',(e)=>{
+            var uesrCon = document.getElementById('userContainer');
+            if(uesrCon && !uesrCon.contains(e.target)){
+                this.$router.push({
+                    name:'Index'
+                })
+            }
+           
+        })
+    }
 }
 </script>
 <style lang="scss">

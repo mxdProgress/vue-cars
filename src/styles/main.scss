@@ -15,6 +15,7 @@ i[class^=icon] {
 
 .icon-user {
     background-image: url(~@/assets/images/icon/icon-user.png);
+    cursor: pointer;
 }
 
 .icon-search {
@@ -23,4 +24,24 @@ i[class^=icon] {
 
 .icon-location {
     background-image: url(~@/assets/images/icon/icon-location.png);
+}
+
+.icon-account {
+    background-image: url(~@/assets/images/icon/uesr_07.png);
+}
+
+.icon-order {
+    background-image: url(~@/assets/images/icon/uesr_10.png);
+}
+
+.icon-attestation {
+    background-image: url(~@/assets/images/icon/uesr_12.png);
+}
+
+.icon-security {
+    background-image: url(~@/assets/images/icon/uesr_15.png);
+}
+
+.icon-center {
+    background-image: url(~@/assets/images/icon/uesr_18.png);
 }

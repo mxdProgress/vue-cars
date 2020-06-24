@@ -9,7 +9,6 @@
         </swiper>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
-        <span @click="user"></span>
     </div>
 </template>
 <script>
@@ -36,11 +35,7 @@ export default {
         }
     },
     methods:{
-        user(){
-            this.$router.push({
-                name:"User"
-            })
-        }
+        
     }
 }
 </script>
